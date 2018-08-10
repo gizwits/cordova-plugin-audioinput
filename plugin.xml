@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-audioinput"
+<plugin id="cordova-gizwits-plugin-audioinput"
         version="1.0.1"
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
@@ -13,7 +13,7 @@
     <keywords>
         cordova,phonegap,media,microphone,mic,input,audio,waapi,audionode,web,audio,api,audionode,capture,ios,android
     </keywords>
-    <repo>git://github.com/nzilbb/cordova-plugin-audioinput.git</repo>
+    <repo>git@github.com:gizwits/cordova-plugin-audioinput.git</repo>
 
     <js-module name="AudioInput" src="www/audioInputCapture.js">
         <clobbers target="audioinput"/>

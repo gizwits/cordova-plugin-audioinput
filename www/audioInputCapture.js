@@ -499,7 +499,6 @@ audioinput._enqueueAudioData = function (data) {
         audioinput._playAudio(data);
         audioinput._audioDataQueue.shift();
     }
-    console.log('_enqueueAudioData', audioinput._audioDataQueue.length);
     audioinput._audioDataQueue.push(data);
 };
 
