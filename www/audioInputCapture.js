@@ -495,6 +495,11 @@ audioinput._initWebAudio = function (audioCtxFromCfg) {
  * @private
  */
 audioinput._enqueueAudioData = function (data) {
+    if (audioinput._audioDataQueue.length >= 1) {
+        audioinput._playAudio(data);
+        audioinput._audioDataQueue.shift();
+    }
+    console.log('_enqueueAudioData', audioinput._audioDataQueue.length);
     audioinput._audioDataQueue.push(data);
 };
 
